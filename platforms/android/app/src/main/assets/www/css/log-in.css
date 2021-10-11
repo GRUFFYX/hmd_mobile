@@ -1,0 +1,81 @@
+.mainbody{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    position: relative;
+    padding: 1px 0 0 0;
+    margin: -1px auto 0 auto;
+}
+
+.backbtn{
+    text-decoration: none;
+    height: auto;
+}
+.backimg{
+    width: 20px;
+    height: auto;
+    margin-top: 20px;
+}
+#logo{
+    display: block;
+    margin: 30% auto 15%;
+    width: 80%;
+    height:auto;
+}
+.topbar{
+    width: 100%;
+    height: auto;
+}
+.lin-form{
+    width: 100%;
+}
+.hmdusr, .hmdpwd{
+    width: 100%;
+    background: none;
+    border:none;
+    border-bottom: 1px solid #CED4DA;
+    font-family: "Helvetica";
+    font-size: 18px;
+    color: #313131;
+}
+.hmdpwd{
+    margin-top:25px;
+}
+
+.hmdusr::placeholder, .hmdpwd::placeholder{
+    color: #ADB5BD;
+}
+
+.err-lbl{
+    color: red;
+    padding:0;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.usr-rq{
+    display:none;
+}
+.pwd-rq{
+    display:none;
+}
+.up-inc{
+    display:none;
+}
+input:focus{
+    outline:none;
+}
+.loginbtn{
+    width: 100%;
+    height: 35px;   
+    background-color: #469D89;
+    font-family: "Century Gothic";
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+.loginbtn:active{
+    background-color:#248277;
+}

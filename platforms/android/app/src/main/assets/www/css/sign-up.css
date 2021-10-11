@@ -1,0 +1,73 @@
+.mainbody{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    position: relative;
+    padding: 1px 0 0 0;
+    margin: -1px auto 0 auto;
+}
+.backbtn{
+    text-decoration: none;
+    height: auto;
+}
+.backimg{
+    width: 20px;
+    height: auto;
+    margin-top: 20px;
+}
+.lbl_register{
+    color: #212121;
+    font-family: "Arial";
+    font-size: 22px;
+    margin: 30px 0 50px;
+
+}
+.topbar{
+    width: 100%;
+    height: auto;
+}
+.lin-form{
+    width: 100%;
+}
+.sgn-usr, .sgn-eml, .sgn-pwd, .sgn-cpwd{
+    width: 100%;
+    background: none;
+    border:none;
+    border-bottom: 1px solid #ADB5BD;
+    font-family: "Helvetica";
+    font-size: 16px;
+    color: #313131;
+    margin-bottom: 20px;
+}
+
+.err-lbl{
+    color: red;
+    padding:0;
+    font-size: 14px;
+    margin-top:0px;
+    margin-bottom: 15px;
+
+}
+
+.usr-err, .eml-inc, .eml-err, .pwd-err, .cpd-non, .usr-tkn{
+    display:none;
+}
+
+
+input:focus{
+    outline:none;
+}
+.sgnbtn{
+    width: 100%;
+    height: 35px;   
+    background-color: #469D89;
+    font-family: "Century Gothic";
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+.sgnbtn:active{
+    background-color:#248277;
+}

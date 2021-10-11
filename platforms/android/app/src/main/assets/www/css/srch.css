@@ -1,0 +1,155 @@
+.mainCont{
+    position:fixed;
+    overflow-y: scroll;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: #dadada;
+    left:0;
+    z-index:0;
+    margin-top: 60px;
+}
+
+.hmtabs{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.jbTab,.pplTab{
+    position: relative;
+    width: 50%;
+    height: 45px;
+}
+.jbLbl{
+    text-align: center;
+    height: 10px;
+    color: black;
+    font-family: "Century Gothic";
+}
+
+.ind{
+    bottom:0;
+    padding:0;
+    margin:0 auto 0;
+    width: 50%;
+    height: 4px;
+    background-color: #407065;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.jbind{
+    display: block;
+}
+
+.pplind{
+    display: none;
+}
+
+.schCont{
+    overflow:hidden;
+    position:relative;
+    top:0;
+    left:0;
+    background-color: #F8F9FA;
+    width: 100%;
+    height: auto;
+}
+
+.scont{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1px 0 0;
+    margin: 50px 0 0;
+}
+
+.schTab{
+    width: 100%;
+    height: auto;
+}
+.schLbl{
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.schjb{
+    display: block;
+}
+.schppl{
+    display: none;
+}
+
+.jbCont{
+    width: 100%;
+    height: auto;
+    margin: 10px 0 0;
+    background-color: #ededed;
+    padding: 10px 0 10px;
+
+}
+
+.jbItem{
+    display: block;
+    overflow: hidden;
+    margin: 2px auto 2px;
+    width: 96%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 2px #424242;
+}
+.imgFrame{
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    width:60px;
+    background-color: #dadada;
+}
+
+.imgCont{
+    width: 100%;
+    height:100%;
+    background-image: url('../img/global_img/default-ico.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.pflInfo{
+    vertical-align: top;
+    display: inline-block;
+    width:60%;
+    height:100%;
+}
+.pflName{
+    margin-top: 5px;
+    color: #131313;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 20px;
+}
+.pflJob{
+    color: #232323;
+    font-family: "Arial";
+    font-size: 16px;
+}
+
+.endCont{
+    width:100%;
+    height: auto;
+    padding-bottom:40px;
+    margin-bottom: 100px;
+}
+.dot{
+    display: block;
+    margin: 15px auto 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #acacac;
+}

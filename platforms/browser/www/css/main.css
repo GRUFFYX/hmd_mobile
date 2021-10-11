@@ -1,0 +1,93 @@
+.mainCont{
+    position:fixed;
+    overflow-y: scroll;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: #dadada;
+    left:0;
+    z-index:0;
+    margin-top: 60px;
+}
+.bookCont{
+    position:relative;
+    top:0;
+    left:0;
+    background-color: red;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.botNav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index:1;
+    left:0;
+    bottom: 0;
+    box-shadow: 0 0 1px gray;
+    display:flex;
+    justify-content:space-evenly;
+    background-color: #F8F9FA;
+}
+
+.tab{
+    float:left;
+    height:65px;
+    width: 33%;
+    padding: 15px 0 0 0;
+}
+.hmBtn,.prfBtn,.bkBtn{
+    display: block;
+    width: 30px;
+    height:auto;
+    margin: auto;
+}
+
+.topNav{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color:#469D89;
+    box-shadow: 0 0 1px #313131;
+
+}
+
+.schBar{
+    display:block;
+    margin:15px auto 0;
+    width: 65%;
+    background-color: white;
+    font-size: 16px;
+    padding: 5px 15px 5px;
+    border:none;
+    border: 1px solid #adadad;
+    border-radius: 15px;
+    font-family: "Century Gothic";
+    color: #484848;
+
+}
+.schBar::placeholder{
+    color: #747474;
+
+}
+.schBar:focus{
+    outline:none;
+}
+
+.endCont{
+    width:100%;
+    height: auto;
+    padding-bottom:40px;
+    margin-bottom: 100px;
+}
+.dot{
+    display: block;
+    margin: 15px auto 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #acacac;
+}

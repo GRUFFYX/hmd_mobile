@@ -1,0 +1,79 @@
+.homeCont{
+    overflow:hidden;
+    position:relative;
+    left:0;
+    background-color: #F8F9FA;
+    width: 100%;
+    height: auto;
+}
+.hcont{
+    width: 100%;
+    height: 100%;
+    /*padding: 1px 0 0;
+    margin: -1px 0 0;*/
+}
+.ctgGrp{
+    width: 100%;
+    height: auto;
+    
+}
+.ctgTop{
+    display: flex;
+    justify-content:safe;
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+}
+.ctgLabel{
+    color: black;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+}
+.ctgBox{
+    padding: 10px 0 10px 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+.ctgItem{
+    width: 180px;
+    height: 220px;
+    overflow: hidden;
+    margin: 5px;
+    background-color: white;
+    border-radius: 3%;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.imgctgcont{
+    width: 100%;
+    height: 150px;
+}
+.imgctg{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.crdTitle{
+    color:black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Century Gothic";
+    font-size: 18px;
+}
