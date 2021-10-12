@@ -35,7 +35,8 @@ $(document).ready(function(){
     });
 
 
-    $('.pflUpdBtn').click(function(){
+    $('.pflUpdBtn').click(function(e){
+        e.preventDefault();
         $.ajax({
             url: "http://192.168.31.199/prj_hmd/homeaid/www/php/updPfl.php",
             type: "POST",

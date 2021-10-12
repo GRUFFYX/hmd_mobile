@@ -1,0 +1,102 @@
+.mainCont{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scoll;
+    overflow-x: hidden;
+
+}
+.topBar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color:#469D89;
+    box-shadow: 0 0 1px #313131;
+
+}
+.btnCont{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 15px;
+    left: 20px;  
+}
+.bckBtn{
+    width: auto;
+    height: 31px;
+}
+.navLbl{
+    width: 50%;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    color: white;
+    font-family: "arial";
+    font-size: 20px;
+}
+.osklGrp, .usklGrp{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    background-color: gold;
+
+}
+.osklLbl{
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: 10px;
+    padding: 10px 0 10px;
+    font-family: "arial";
+    font-size: 18px;
+    color: #313131;
+}
+.osklCont{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    border-top: 1px solid #dcdcdc;
+    padding-bottom: 30px;
+}
+.osklItm{
+    width: 100%;
+    height: auto;
+    padding: 10px 0 10px;
+    padding-left: 10px;
+    background-color: #f2faf1;
+    border-bottom: 1px solid #dcdcdc;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    color: #313131;
+}
+.usklGrp{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    background-color: gold;
+
+}
+.usklLbl{
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: 10px;
+    padding: 10px 0 10px;
+    font-family: "arial";
+    font-size: 18px;
+    color: #313131;
+}
+
+.usklCont{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    border-top: 1px solid #dcdcdc;
+    padding-bottom: 30px;
+}
+

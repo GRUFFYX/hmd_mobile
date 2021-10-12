@@ -20,20 +20,9 @@ $(document).ready(function(){
                         else{
                             var nm = "No Name";
                         }
-
-                        $('.jbCont').append(`<div class="jbItem">
-                                                <div class="imgFrame">
-                                                    <div class="imgCont"></div>
-                                                </div>
-
-                                                <div class = "pflInfo" id = "${pfl.pfl_id}">
-                                                    <div class = "pflName">
-                                                        ${nm}
-                                                    </div>
-                                                </div>
-
-                                            </div>`);
-                                            getJob(pfl.pfl_id);                     
+                        console.log(index);
+                        getJob(index, pfl.pfl_id, nm);                       
+                    
                     });
                 }
                 else{
@@ -51,22 +40,35 @@ $(document).ready(function(){
 
 });
 
-function getJob(id){
-    var test = $(".schBar").val();
-    if(test != ""){
+function getJob(id, pfl_id, pfl_nm){
+    console.log(pfl_id);
+    var sch = $(".schBar").val();
+    if(sch != ""){
         $.ajax({
-            url: "http://192.168.31.199/prj_hmd/homeaid/www/php/getJob.php",
+            url: "http://192.168.31.199/prj_hmd/homeaid/www/php/dpItem.php",
             type: "GET",
             data: {
                 "key": $(".schBar").val(),
+                "pfl": pfl_id
             },
             success: function(response){
-                
-                $('#' + id).append(`
-                    <div class = "pflJob">
-                        ${response.ctg_tl}
-                    </div>`);
-                console.log(response.ctg_tl);
+                response.forEach(function(skl, index){
+                    $('.jbCont').append(`<div class="jbItem">
+                                                    <div class="imgFrame">
+                                                        <div class="imgCont"></div>
+                                                    </div>
+
+                                                    <div class = "pflInfo" id = "${id}" name="${pfl_id}">
+                                                        <div class = "pflName">
+                                                            ${pfl_nm}
+                                                        </div>
+                                                        <div class = "pflJob">
+                                                            ${skl.ctg_tl}
+                                                        </div>
+                                                    </div>
+                                                </div>`);
+                    console.log(skl.ctg_tl);
+                });
             }
         });
     }
