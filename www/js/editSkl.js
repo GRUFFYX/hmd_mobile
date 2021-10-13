@@ -7,11 +7,11 @@ $(document).ready(function(){
         success: function(response){
             if(response != ''){
                 response.forEach(function(acc, index){
-                        $('.osklCont').append(`<div class = "osklItm" onclick="remSkl('${acc.ctg_cd}')">${acc.ctg_tl}</div>`);
+                        $('.osklCont').append(`<div class = "osklItm"><div class = "ojbtl">${acc.ctg_tl}</div><div class ="arrow-down" onclick = "remSkl('${acc.ctg_cd}')"><span>V</span></div></div>`);
                 });
             }
             else{
-                $('.sklList').append(`<p style="color: #423131;" class = "" >No Skill(s) to be displayed.</p>`);
+                $('.osklCont').append(`<p class = "msLbl" >No Skill(s) to be displayed.</p>`);
             }
         }
     });
@@ -23,11 +23,11 @@ $(document).ready(function(){
         success: function(response){
             if(response != ''){
                 response.forEach(function(skl, index){
-                        $('.usklCont').append(`<div class = "usklItm" onclick="remSkl('${skl.ctg_cd}')">${skl.ctg_tl}</div>`);
+                        $('.usklCont').append(`<div class = "usklItm"><div class = "jbtl">${skl.ctg_tl}</div><div class ="arrow-up" onclick = "addSkl('${skl.ctg_cd}')"><span>Ʌ</span></div></div>`);
                 });
             }
             else{
-                $('.sklList').append(`<p style="color: #423131;" class = "" >No Skill(s) to be displayed.</p>`);
+                $('.usklCont').append(`<p class = "msLbl" >No Skill(s) to be displayed.</p>`);
             }
         }
     });
@@ -38,6 +38,32 @@ $(document).ready(function(){
 });
 
 function remSkl(code){
+    $.ajax({
+        url: "http://192.168.31.199/prj_hmd/homeaid/www/php/remSkl.php",
+        type: "POST",
+        data: {
+            "code": code
+        },
+        success: function(response){
+            console.log("Line reached");
+            window.location.href="editSkl.html";
+        }
+    });
+
+}
+
+function addSkl(code){
+    $.ajax({
+        url: "http://192.168.31.199/prj_hmd/homeaid/www/php/addSkl.php",
+        type: "POST",
+        data: {
+            "code": code
+        },
+        success: function(response){
+            console.log("Line reached");
+            window.location.href="editSkl.html";
+        }
+    });
 
 }
 

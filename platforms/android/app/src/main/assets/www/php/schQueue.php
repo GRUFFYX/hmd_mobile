@@ -7,7 +7,7 @@
 
     $arr = array();
     $key = $_GET['key'];
-    $stmt = $db->prepare("SELECT ctg_cd FROM hmd_ctg WHERE ctg_tl LIKE '%$key%'");
+    $stmt = $db->prepare("SELECT ctg_cd FROM hmd_ctg WHERE ctg_tl LIKE '$key%'");
     $stmt->execute();
     while($row = $stmt->fetch()){
         $code = $row['ctg_cd'];
@@ -15,10 +15,15 @@
         $state->execute();
         while($query = $state->fetch()){
                 $info = $query['pfl_skl_id'];
-                $grab = $db->prepare("SELECT * FROM hmd_pfl WHERE pfl_id = $info ORDER BY pfl_nm ASC");
+                $grab = $db->prepare("SELECT pfl_nm, pfl_id FROM hmd_pfl WHERE pfl_id = $info ORDER BY pfl_nm ASC");
                 $grab->execute();
                 $result = $grab->fetch(PDO::FETCH_ASSOC);
-                array_push($arr, $result);
+                if(in_array($result, $arr)){
+
+                }
+                else{
+                    array_push($arr, $result);
+                }
         }
     }
 

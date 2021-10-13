@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $('.prfTab').one("click",function(){
         $('.fullName').empty();
         $('.pflEml').empty();
         $('.pflAdr').empty();
@@ -38,7 +37,8 @@ $(document).ready(function(){
 
 
 
-
-    });
+        $('.sklEdit').click(function(){
+            window.location.href = "editSkl.html";
+        });
 
 });

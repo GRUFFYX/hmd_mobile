@@ -43,7 +43,6 @@
     margin-top: 60px;
     width: 100%;
     height: auto;
-    background-color: gold;
 
 }
 .osklLbl{
@@ -59,14 +58,15 @@
 .osklCont{
     width: 100%;
     height: auto;
-    background-color: aqua;
+    background-color: #ededed;
     border-top: 1px solid #dcdcdc;
     padding-bottom: 30px;
 }
 .osklItm{
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: auto;
-    padding: 10px 0 10px;
+    height: 60px;
     padding-left: 10px;
     background-color: #f2faf1;
     border-bottom: 1px solid #dcdcdc;
@@ -74,11 +74,26 @@
     font-size: 20px;
     color: #313131;
 }
+.arrow-down{
+    position: absolute;
+    right: 10px;
+    display: table;
+    font-family: "Arial";
+    font-size: 14px;
+    height: 100%;
+    background-color: #be3711;
+    width: 60px;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    line-height: 55px;
+}
+
+
 .usklGrp{
     margin-top: 60px;
     width: 100%;
     height: auto;
-    background-color: gold;
 
 }
 .usklLbl{
@@ -95,8 +110,56 @@
 .usklCont{
     width: 100%;
     height: auto;
-    background-color: aqua;
+    background-color: #ededed;
     border-top: 1px solid #dcdcdc;
     padding-bottom: 30px;
 }
 
+.usklItm{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    background-color: #f2faf1;
+    border-bottom: 1px solid #dcdcdc;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    color: #313131;
+}
+.arrow-up{
+    position: absolute;
+    right: 10px;
+    display: table;
+    font-family: "Arial";
+    font-size: 14px;
+    height: 100%;
+    background-color: #469D89;
+    width: 60px;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    line-height: 55px;
+}
+span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+.jbtl{
+    position: absolute;
+    top: 17px;
+    left:0;
+}
+
+.ojbtl{
+    position: absolute;
+    top: 17px;
+    left:0;
+}
+
+.msLbl{
+    color: #423131;
+    margin-top: 40px;
+    margin-left: 20px;
+}

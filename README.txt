@@ -1,1 +1,0 @@
-original file path for ajax url is C:/xampp/htdocs/prj_hmd/homeaid/www/

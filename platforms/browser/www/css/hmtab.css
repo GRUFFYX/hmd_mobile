@@ -9,8 +9,8 @@
 .hcont{
     width: 100%;
     height: 100%;
-    /*padding: 1px 0 0;
-    margin: -1px 0 0;*/
+    padding: 1px 0 0;
+    margin: 50px 0 0;
 }
 .ctgGrp{
     width: 100%;
@@ -77,3 +77,43 @@
     font-family: "Century Gothic";
     font-size: 18px;
 }
+
+.hmtabs{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+.jbTab,.pplTab{
+    position: relative;
+    width: 50%;
+    height: 45px;
+}
+.jbLbl{
+    text-align: center;
+    height: 10px;
+    color: black;
+    font-family: "Century Gothic";
+}
+
+.ind{
+    bottom:0;
+    padding:0;
+    margin:0 auto 0;
+    width: 50%;
+    height: 4px;
+    background-color: #407065;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.jbind{
+    display: block;
+}
+
+.pplind{
+    display: none;
+}
+

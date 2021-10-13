@@ -76,6 +76,67 @@ hr{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.EditInfo{
+    width: 100%;
+    margin-bottom: 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.updLbl{
+    color: black;   
+    font-family: "Century Gothic";
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.edtEml,.edtAdr,.edtNm{
+    
+    width: 80%;
+    background: none;
+    margin-left: 20px;
+    border:none;
+    border-bottom: 1px solid #acacac;
+    color: black;
+    font-family: "Century Gothic";
+    font-size: 18px;
+}
+.updCont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    white-space: nowrap;
+    justify-content:space-evenly;
+}
+.pflUpdBtn{
+    background-color: #469D89;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    width: 40%;
+    height: 40px;
+    margin-top: 30px;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    padding: 5px;
+}
+.pflCnlBtn{
+    background-color: #dd1c0e;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    width: 40%;
+    height: 40px;
+    margin-top: 30px;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+.edtEml:focus,.edtAdr:focus,.edtNm:focus{
+    outline: none;
+}
+
 .infoLbl{
     color: black;
     font-family: "Century Gothic";

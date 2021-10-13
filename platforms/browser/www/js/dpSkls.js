@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $('.prfTab').one("click",function(){
         $('.sklList').empty();
         $.ajax({
             url: "http://192.168.31.199/prj_hmd/homeaid/www/php/dpSkls.php",
@@ -16,5 +15,4 @@ $(document).ready(function(){
 
             }
         });
-    });
 });
